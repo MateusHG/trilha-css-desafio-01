@@ -1,0 +1,164 @@
+@import url(reset.css);
+
+body {
+    background-color: black;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #33a8d8;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+p {
+    color: white;
+}
+
+section {
+    margin: 100px auto;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(49, 168, 221, .2), rgba(0, 0, 0, .9)), url('../images/banner.png');
+    /*Deixei o b-size como contain e o b-repeat pra repetir na vertical,
+    quando vê com o navegador inteiro aberto fica o banner até o final
+    (antes cortava uma linha e ficava apenas o azul de outra parte da foto*/
+    background-size: contain;
+    background-repeat: repeat-x;
+    height: 525px;
+    padding-top: 60px;
+    border-color: 1px solid #33a8d8;
+    }
+
+    .banner .banner-content {
+        color: white;
+        width: 600px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .banner h1 {
+        font-weight: 900;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: transparent;
+        background: -webkit-linear-gradient(#33a8d8, #1472b7);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+    .banner p {
+        font-size: 1.25rem;
+        margin: 16px 0 24px;
+        /*aumentei o espaçamento */
+        letter-spacing: 1.5px;
+    }
+
+
+    .banner .logo {
+        background-color:rgba(0, 0, 0, .2);
+        height: 260px;
+        border-radius: 50%;
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+
+    .banner .logo img {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+.banner .banner-content button {
+    color: #33a8d8;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border-image: linear-gradient(#3ba1cd, #1572b7);
+    border-image-slice: 10;
+    border-radius: 30px;
+}
+
+#course-content {
+    width: 800px;
+    text-align: center;
+}
+
+#course-content p {
+    color: white;
+/* Aumentei o espaçamento para o texto ficar mais distribuído*/
+    font-weight: inherit;
+    letter-spacing: 2px;
+}
+
+#course-content .modules-list {
+    margin: 24px 0;
+}
+
+#course-content .modules-list .module {
+    color: white;
+    width: 530px;
+    margin: 0 auto 24px;
+    border: 2px solid #33A8D8;
+    background-color: #252525;
+    padding: 16px;
+    border-radius: 30px;
+    /*Exagerei mais a sombra pra aplicar profundidade e mesclar com o fundo
+    preto do site*/
+    box-shadow: inset -15px 20px 20px rgba(0, 0, 0, .7);
+}
+
+#course-content .modules-list .module span {
+    color: #33a8d8;
+}
+
+#transform-world {
+    height: 560px;
+    background-image: url(/trilha-css-desafio-01-main/assets/images/woman-code.png);
+    background-size: cover;
+    background-attachment: fixed;
+    border-top: #33A8D8;
+    border-bottom: 1px solid #33A8D8;
+    padding: 200px
+}
+
+#transform-world p {
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    max-width: 250px;
+    text-shadow: 3px 2px #33A8D8;
+}
+
+#professional-challenges {
+    text-align: center;
+    width: 800px;
+}
+
+#professional-challenges img {
+    margin: 32px 0;
+}
+
+footer {
+    padding: 60px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    border-top: 1px solid #33A8D8;
+}
+
+footer .dio-logo {
+    width: 300px;
+}
+
+footer a {
+    color: #33A8D8;
+    font-weight: bold;
+    text-decoration: none;
+}
